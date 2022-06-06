@@ -42,7 +42,7 @@ void PushStack(Stack* s, StackDataType x)
 }
 void PopStack(Stack* s)
 {
-	assert(s||(s->top != 0));
+	assert(s&&(s->top != 0));
 	s->top--;
 }
 void DestoryStack(Stack* s)
